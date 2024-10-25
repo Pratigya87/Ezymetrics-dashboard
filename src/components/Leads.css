@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leads {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 60px;
+  max-width: 500px;
+  margin: 50px 650px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leads-title {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.leads-list {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.lead-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 16px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  gap: 30px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.lead-item:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.lead-name {
+  font-weight: 500;
+  color: #555;
+}
+
+.lead-status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.lead-status.new {
+  background-color: #4caf50;
+}
+
+.lead-status.in-progress {
+  background-color: #ff9800;
+}
+
+.lead-status.completed {
+  background-color: #2196f3;
+}
+
+/* Lead Details Modal */
+
+.lead-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead-details-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.lead-details-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.lead-details-status {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  background-color: #d9534f;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-button:hover {
+  background-color: #c9302c;
+}
